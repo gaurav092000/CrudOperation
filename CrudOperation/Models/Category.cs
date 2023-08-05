@@ -13,13 +13,14 @@ namespace CrudOperation.Models
         [DisplayName("Id")]
         public int CategoryId { get; set; }
 
-        [DisplayName("Category")]
+        [DisplayName("Category Name")]
         public string CategoryName { get; set; }
 
         [DisplayName("Description")]
         public string Description { get; set; }
 
         [DisplayName("Status")]
+        [ScaffoldColumn(false)]
         public bool Status { get; set; }
 
 
